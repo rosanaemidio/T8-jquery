@@ -13,8 +13,8 @@ $(function(){
 
     })
     $('#adicionaFileira').click(function(){
-        $('.container_cards')after($('.container_cards')
-    }
+        $('.container_cards').after($('.container_cards'))
+    })
 
 })
 
