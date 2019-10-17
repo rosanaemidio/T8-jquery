@@ -3,6 +3,6 @@
 
     $(document).ready(function(){
 
-        let selected = $('img').filter('[alt]');
+        let selected = $('img').filter('[alt]');//ou $('img[alt='Shoto Todoroki]')
         console.log(selected);
     });

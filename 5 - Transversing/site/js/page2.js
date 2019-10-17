@@ -4,14 +4,14 @@
 // Adicione a classe "list-group-item-dark" nos demais itens.
 
 $(function(){
-    $('input').filter('[type=text]').parent().addClass('alert alert-info');
+    $('input').filter('[type="text"]').parent().addClass('alert alert-info');
 
     $('.list-group-item').click(function(){
-        $(this).addClass('list-group-item-info');
-        $('.list-group-item').siblings().addClass('list-group-item-dark')
+        $(this).removeClass('list-group-item-dark').addClass('list-group-item-info');
+        $(this).siblings().removeClass('list-group-item-info').addClass('list-group-item-dark');
 
     })
 })
-
+//Para a funcionalidade do clique dê certo preciso remover a segunda classe adicionada antes de adicionar a primeira e preciso remover a primeira antes de adicionar a segunda. Assim, a funcionalidade do click irá .
 
 
